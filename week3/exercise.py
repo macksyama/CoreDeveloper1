@@ -7,7 +7,21 @@
 # Implement FizzBuzz using function(s) with Clean Code standards
 
 # -----FIZZBUZZ CODE HERE-----
+def FIZZBUZZ(num):
+    if (num % 3 == 0) & (num % 5 == 0):
+        result = 'Fizz Buzz'
+    elif num % 3 == 0:
+        result = 'Fizz'
+    elif num % 5 == 0:
+        result = 'Buzz'
+    else:
+        result = num
+    return result
 
+# test code for FIZZBUZZ
+for num in range(1, 17):
+    result = FIZZBUZZ(num)
+    print result
 
 # -----END FIZBUZZ CODE-----
 
